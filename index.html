@@ -1,0 +1,61 @@
+<!-- Para determinar que o código está sendo feito em HTML(em caso de navegadores que não tem acessibilidade) -->
+<!DOCTYPE html>
+<!-- Determina a línguagem do seu site -->
+<html lang="pt-br">
+  <!-- Representa uma coleção de metadados para documentos que serão inseridos ai dentro. -->
+  <head>
+
+    <!-- Linkagem com o google fontes  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <!-- especifíca a coleção de caracteres que o navegador irá usar-->
+    <meta charset="UTF-8">
+    <!-- Está determinando que os códigos inseridos no projeto serão compatíveis com o navegador Edge -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Este código permite uma acessibilidade maior, tornando possível acessar o meu site final atravez de celulares, ou tablets e etc... -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- O títulozinho que vai lá em cima. -->
+    <title>Habits</title>
+    <!-- Link do css com o html -->
+    <link rel="stylesheet" href="./style.css">
+ <!-- fechamento do head -->
+  </head>
+<!-- Parte visual do meu site aqui dentro. -->
+  <body>
+<!-- Cabeçalho da minha página -->
+    <header>
+<!-- É uma imagem (svg) -->
+    <img src="./assets/logo.svg" alt="Logomarca do aplicativo Habits">
+    <!-- Botão funcional -->
+    <button>
+    <img src="./assets/plus.svg" alt="Ícone sinal de mais roxo">
+    <div>Registrar o meu dia</div>
+        
+    </button>
+<!-- Fechamento do header -->
+</header>
+<!-- O elemento form representa uma seção de um documento que contém controles interativos que permitem ao usuário submeter informação a um determinado servidor web.-->
+<form id="form-habits">
+    <!-- Container genérico utilizado para agrupar os elementos "habit" -->
+    <div class="habits">
+        <!-- Containers com emojis da página inseridos dentro de cada div -->
+        <div class="habit" data-name="run">🏃🏿</div>
+        <div class="habit" data-name="water">💧</div>
+        <div class="habit" data-name="academy">💪🏿</div>
+        <div class="habit" data-name="sleep">💤</div>
+        <div class="habit" data-name="dog">🦮</div>
+        <div class="habit" data-name="salad">🥗</div>
+    </div>
+
+    <div class="days">
+    </div>
+</form>
+
+<script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+
+<!-- importei um arquivo .js no html -->
+    <script src="./script.js"></script>
+
+</body>
+</html>
